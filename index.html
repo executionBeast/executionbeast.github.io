@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="header-hero-wrapper" class="header-hero-wrapper">
+        <div class="header">
+            <div class="logo-section">
+                <a id="rlnk" href="/" class="logo-heading" >&ltsujit/&gt</a>
+            </div>
+            <div class="nav-links">
+                <a id="prlnk" href="#project-section" class="nav-link" >Projects</a>
+                <a id="ablnk" class="nav-link" href="#about">About</a>
+                <a id="ctlnk" class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-info">
+                <h1 class="info-text"> Hi, I'm Full Stack Dev.</h1>
+                <h2 class="info-skill-text"> I expertise <span class="skill-text-animated">MERN & Selenium (Python)</span></h2>
+                <div class="hero-btns">
+                    <button onclick="log()" class="resume-btns">Resume</button>
+                    <a href="#project-section" class="projct-btns">Projects</a>
+                </div>
+            </div>
+            <div class="hero-image-div">
+                <img class="hero-image" src="./assets/portfolioimage2.png" alt="hero image">
+            </div>
+        </div>
+  
+        
+    </div>
+    <div id="canvas-header-hero-wrapper" class="canvas-header-hero-wrapper"></div>
+
+   
+  
+   
+    <!------------------------------- Project Section ------------------------------------ -->
+   <section id="project-section" class="project-section">
+        <div class="divider"></div>
+        <h1 class="project-section-heading">Projects</h1>
+        
+        <div class="projects">
+            <div class="image-area">
+                <div class="conntector"></div>
+                <div class="circle"></div>
+                <img src="./assets/workocrud.png" alt="worko-crud"> 
+            </div>
+            <div class="text-area">
+                <h1 class="project-title">WorkoCrud</h1>
+                <h2 class="project-category">(User Managment)</h2>
+                <p class="project-description">User Management System with functionalities of create, read, update and delete user. It features soft delete methods and use Joi, DTO (Data Transfer Object) for effective data handling.</p>
+                <div class="tech-div">
+                    <span class="tech">NodeJS</span> 
+                    <span class="tech">ExpressJS</span> 
+                    <span class="tech">MongoDB</span> 
+                    <span class="tech">EJS</span> 
+                    <!-- <span class="tech"></span>      -->
+                </div>
+                </div>
+        </div>
+
+
+        <div id="project2" class="projects">
+            <div class="image-area">
+                <div class="conntector"></div>
+                <div class="circle"></div>
+                <img src="./assets/Bcertify.png" alt="worko-crud"> 
+            </div>
+            <div class="text-area">
+                <h1 class="project-title">Bcertify</h1>
+                <h2 class="project-category">(Blockchain Based Certificate Management)</h2>
+                <p class="project-description">Bcertify an efficient certificate management system that leverages blockchain to protect digital documents forgery and tempering. It consist of 3 entities (User) Student, Issuer and a verifier, Student can get issued certificate by issuer and verify it originality with QR Code that fetch original certificate from IPFS.</p>
+                <div class="tech-div">
+                    <span class="tech">NodeJS</span> 
+                    <span class="tech">ExpressJS</span> 
+                    <span class="tech">MongoDB</span> 
+                    <span class="tech">ReactJS</span> 
+                    <span class="tech">Solidity</span>     
+                    <span class="tech">Ethereum</span>     
+                </div>
+            </div>
+        </div>
+
+
+        <div id="project3" class="projects">
+            <div class="image-area">
+                <div class="conntector"></div>
+                <div class="circle"></div>
+                <img src="./assets/UserDirectory.png" alt="worko-crud"> 
+            </div>
+            <div class="text-area">
+                <h1 class="project-title">UserDirectory</h1>
+                <h2 class="project-category">(User Profiles)</h2>
+                <p class="project-description">User Directory App that lets you search and scroll through users fetched from rest api. users list can be arranged in alphabetical order and each row is clickable redirects to the user profile page with context management </p>
+                <div class="tech-div">
+                    <span class="tech">NodeJS</span> 
+                    <span class="tech">ReactNative</span> 
+                    <span class="tech">REST API</span> 
+                    <span class="tech">ReactContext</span> 
+                    <!-- <span class="tech"></span>      -->
+                </div>
+                </div>
+        </div>
+
+        <div id="project4" class="projects">
+            <div class="image-area">
+                <div class="conntector"></div>
+                <div class="circle"></div>
+                <img src="./assets/FoodApp.png" alt="worko-crud"> 
+            </div>
+            <div class="text-area">
+                <h1 class="project-title">FoodCart</h1>
+                <h2 class="project-category">(Food Crud)</h2>
+                <p class="project-description">FooCart app lets you keep record of food items purchased. with functionality of dragable arrangement that modifies the list in order of arrangement after drag .</p>
+                <div class="tech-div">
+                    <span class="tech">NodeJS</span> 
+                    <span class="tech">ReactNative</span> 
+                    <span class="tech">ReactContext</span>    
+                </div>
+            </div>
+        </div>
+
+   </section>
+
+   
+   <p style="text-align: center;" >It is not yet responsive</p>
+
+
+
+
+
+
+
+
+    <!------------------------------End Project Section----------------------------->
+
+
+
+    <!-- Matter JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./matter.js"></script>
+   
+</body>
+</html>

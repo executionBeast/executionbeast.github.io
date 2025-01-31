@@ -1,0 +1,340 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Heading Section */
+.header-hero-wrapper {
+    max-width: 100vw;
+    width: 100%;    
+    height: 100vh;
+    background-image: url('./assets/white-wall.png');
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    background-size: cover;
+    /* background-color: blue; */
+
+}
+
+#canvas-header-hero-wrapper {
+    position: absolute;  /* Ensures it stays full screen */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensures no scrollbars appear */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas {
+    display: block; /* Removes unwanted spacing issues */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* background-color: red; */
+
+}
+
+.logo-heading {
+    color:#212121;
+    font-size: xx-large;
+    font-weight: 900;
+    text-decoration: none;
+    pointer-events: all;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+    font-size:larger;
+    margin-left: 4rem;
+    pointer-events: all;
+}
+
+/* 
+#prlnk:hover{
+    font-size: x-large;
+}
+
+#ablnk:hover {
+    font-size: x-large;
+}
+
+#ctlnk:hover {
+    font-size: x-large;
+}
+ #rlnk:hover {
+    font-size: x-large;
+
+ } */
+/* Heading Section End */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-info {
+    pointer-events: all;
+    /* background-color: red; */
+    
+}
+
+.info-text {
+    font-size: xxx-large;
+    /* color:beige */
+    margin-bottom: 8px;
+    
+
+}
+
+.info-skill-text {
+    margin-bottom:16px;
+    color: #222222
+}
+
+/* .skill-text-animated::before {
+    content: "MERN (Javascript)";
+    animation: switchText 3s infinite;
+}
+
+.skill-text-animated::after {
+    content: "Selenium (Python)";
+    animation: switchText 3s infinite;
+}
+
+@keyframes switchText {
+    0%, 50% {
+        content: "MERN (Javascript)";
+        color : blue;
+    }
+    50.01%, 100% {
+        content : "Selenium (Python)";
+        color: #3476a4
+    }
+} */
+
+.hero-btns {
+    pointer-events: all;
+    
+}
+
+.resume-btns{
+
+    padding: 0.6rem 1.5rem;
+    font-size: large;
+    border: 1px solid white ;
+    border-radius: 4px;
+    background-color: #9A2E35;
+    color: white;
+    font-weight: 600;
+    pointer-events: all;
+    cursor:grab;
+
+}
+.projct-btns {
+    padding: 0.6rem 1.5rem;
+    font-size: large;
+    border: 1px solid black ;
+    border-radius: 4px;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    pointer-events: all;
+    cursor:grab;
+
+}
+
+.hero-image {
+    margin-top: 2.5rem;
+    width:35vw;
+    border-radius: 100%;
+    border:2px solid white;
+    pointer-events: all;
+}
+
+.navigate-project {
+    pointer-events: all;
+}
+/* Hero Section End */
+
+.nav-project {
+    align-self: center;
+    justify-self: center;
+}
+
+/*------------------ Project Section----------------------------- */
+
+.project-section {
+    position: relative;
+}
+
+.divider {
+    position: absolute;
+    width: 2px;  
+    background-color: #4EB49A;
+    height: 100%;  /*auto not work; */
+    top: 0;
+    left:50%;
+}
+
+.project-section-heading {
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    background-color:#f0eded;
+    color: #4EB49A;
+    font-size: xxx-large;
+    padding: 0.6vw 1.2vw;
+    font-weight: 500;
+    border-bottom: 2px solid #4EB49A;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+
+.projects {
+    width: 100%;
+    max-width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.image-area {
+    /* background-color: red; */
+    width: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-area img {
+    width: 30vw;
+}
+
+.conntector {
+    width: 50%;
+    height: 1px;
+    background-color:#EA5A30;
+    right: 0;
+    position: absolute;
+    z-index: -5;
+}
+
+.circle {
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    border: 3px solid #183D5B;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+    transform: translate(50%);
+}
+
+.circle:hover {
+    /* transform: scale(10%); */
+
+    height: 1.3em;
+    width: 1.3em;
+    transition: all 0.05s ease-in-out;
+}
+
+.text-area {
+    /* background-color: green; */
+    /* line-height:2.3em; */
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: center;
+    padding-left: 8vw;
+}
+.project-title {
+    font-size: 2.4em;
+    color: #312F31;
+}
+.project-category {
+    font-size: 1.8em;
+    color: #312F31;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+.project-description {
+    font-size: 1em;
+    margin-bottom: 1.2em;
+    padding-right: 24px;  
+}
+
+.tech-div {
+
+}
+.tech {
+    border: 1px solid gray;
+    border-radius: 1em;
+    padding: 4px 12px;
+    background-color: #4EB49A44;
+    column-width: 4;
+}
+
+#project2, #project4 {
+    flex-direction: row-reverse;
+}
+ 
+#project2 .conntector, #project4 .conntector {
+    right:auto;
+    left:0;
+}
+#project2 .circle , #project4 .circle{
+    right:auto;
+    left:0;
+    transform: translate(-50%);
+}
+
+#project2 .project-title {
+    color:#EA5A30;  
+}
+
+
+#project3  .image-area img, #project4 .image-area img {
+    max-width: 52vw;
+    width: 100%;
+
+}
+
+#project3 .project-title{
+    color: #DEC43A;
+}
+
+
