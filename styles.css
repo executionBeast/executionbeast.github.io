@@ -112,7 +112,9 @@ canvas {
 
 .info-skill-text {
     margin-bottom:16px;
-    color: #222222
+    color: #222222;
+    font-weight: 550;
+    /* font:bold; */
 }
 
 /* .skill-text-animated::before {
