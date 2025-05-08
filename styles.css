@@ -62,6 +62,7 @@ canvas {
 
 
 
+
 .nav-link {
     text-decoration: none;
     color: #212121;
@@ -392,3 +393,28 @@ canvas {
     transition: all 0.1s ease-out;
 }
 
+
+/* For Responsiveness */
+
+.menu-icon {
+    display: none;
+}
+
+
+
+/* Extra small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    .header-hero-wrapper {
+        background-color: red;
+    }
+    .menu-icon {
+        display: block;
+        width: 
+    }
+    .header  {
+        /* display: none; */
+    }
+
+}
+
+/* For Responsiverness */
